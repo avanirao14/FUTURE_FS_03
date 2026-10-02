@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF8F5;
+    color: #1F1E1D;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Custom luxury editorial styling utilities */
+.font-display {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Distinctive Luxury Book Session Button */
+.btn-book-session {
+  background-color: #6E2332;
+  color: #FAF8F5;
+  border: 1px solid #551724;
+  letter-spacing: 0.18em;
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 10px rgba(110, 35, 50, 0.15);
+}
+
+.btn-book-session:hover {
+  background-color: #551724;
+  color: #FAF8F5;
+  box-shadow: 0 4px 18px rgba(110, 35, 50, 0.28);
+  transform: translateY(-1px);
+}
+
+.btn-book-session:active {
+  transform: translateY(0);
+}
+
+/* Image reveal and smooth hover zoom */
+.zoom-subtle {
+  transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s ease;
+}
+
+.group:hover .zoom-subtle {
+  transform: scale(1.03);
+}
+
+/* Luxury card hover */
+.luxury-card {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+}
+
+.luxury-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px -12px rgba(31, 30, 29, 0.08);
+  border-color: rgba(110, 35, 50, 0.35);
+}
+
+/* Custom delicate scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DED7CB;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #BDB4A4;
+}
+
+

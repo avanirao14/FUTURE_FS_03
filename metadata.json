@@ -1,0 +1,6 @@
+{
+  "name": "LĀYA Boutique & Styling Studio",
+  "description": "LĀYA is a boutique and personal styling studio blending curated Indian luxury fashion, artisanal textiles, and bespoke wardrobe consultations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
